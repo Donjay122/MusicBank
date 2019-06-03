@@ -1,0 +1,235 @@
+/* ONLINE CV     */
+
+
+
+/* class Selectors*/
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Raleway;
+}
+
+header{
+	width: 100%;
+}
+
+.main-nav{
+	padding: .5em 0;
+	overflow: hidden;
+	width: 90%;
+	margin: auto;
+}
+
+.nav-list li{
+	display: inline-block;
+	padding: 0 20px;
+	float: right;
+}
+.nav-list a{
+	background-color: black;
+	color: white;
+	padding: 5px;
+	font-family: 'Raleway';
+	font-size: 1.2em;
+}
+
+.greenborder{
+	border-top: solid 3px lightseagreen;
+}
+
+.orange{
+	border-top: solid 3px tomato;
+}
+
+.tomato{
+	color: tomato;
+}
+
+
+/*.nav-list a:hover{
+	padding-left: 5px;
+	border-left: solid 2px violet;
+	border-right: none;*/
+}
+
+.nav-list{
+	text-align: center;
+}
+
+.container{
+	min-height: calc(95vh - 132px);
+	display: inline-flex;
+	padding: 10%;
+	width: 80%
+}
+
+.head-list{
+	width: 50%;
+	float: right;
+	padding-left: 10%;
+	margin: auto;
+}
+
+.head-list li{
+	font-size: .8em;
+	display: inline-block;
+	animation: 2s headShake;
+}
+
+.main-header{
+	width: 50%;
+	float: left;
+}
+
+.footer{	
+	font-size: .5em;
+	text-align: center;
+}
+
+h1{
+	font-family: 'Raleway';
+	letter-spacing: 4px;
+	font-size: 50px;
+	padding: 0;
+	margin: 0;
+}
+
+h1 + p {
+	color: lightseagreen;
+	font-size: 2em;
+	margin: 0;
+	font-family:Raleway;
+	border-bottom: 1px solid;
+	display: inline;
+}
+
+h2{
+	font-family: Raleway;
+	letter-spacing: 2px;
+	font-size: 40px;
+	padding: 0;
+	margin: 0 10%;	
+}
+
+
+.button{
+	display: inline-block;
+	padding: 10px;
+	margin: .5em 0;
+	border: solid 1px black;
+	border-radius: 3px;
+	font-family:Raleway;
+	color: white;
+	background-color: black;
+	box-shadow: 2px 2px 5px grey;
+}
+.button:active{
+	background-color: lightseagreen;
+	color: white;
+}
+
+
+.faicon{
+	font-size: .8em;
+	color: black;
+	animation: 3s flash;
+	margin: .2em;
+}
+
+.faicon:hover{
+	color: orange;
+}
+
+#logo{
+	color: black;
+	font-weight: 900;
+	position: absolute;
+	top: 4%;
+}
+
+.inputs{
+	font-size: 1.2em;
+	border:solid 1px black;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	max-width: 80%;
+}
+
+
+
+
+
+/* ANNIMATE     
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+*/
+
+
+/* MEDIA QUERIES   */
+@media(max-width:700px){
+	.nav-list li{
+		padding: 1px;
+		margin: 1px;
+	}
+}
+
+@media(max-width:940px){
+	.wrapper{
+		background-image: none;
+	}
+	
+	.nav-list li{
+		padding: .2em;
+	}
+	.nav-list a{
+		font-size: .7em;
+	}
+	
+	h1{
+		font-size: 40px;
+	}
+	
+	h1 + p{
+		font-size: 30px;
+	}
+}
+
+@media(max-width:1200px){
+	.wrapper{
+		background-position: right 100%;
+		background-size:  350px 250px;
+	}
+
+}
